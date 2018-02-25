@@ -46,5 +46,10 @@ namespace SistemaEmpleadosMVC.UserControlForm
             }
 
         }
+
+        private void data_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+        }
     }
 }

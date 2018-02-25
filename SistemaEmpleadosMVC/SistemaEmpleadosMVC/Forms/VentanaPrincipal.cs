@@ -23,23 +23,17 @@ namespace SistemaEmpleadosMVC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            agregarEmpleado2.Show();
             buscar.Hide();
             editarEmpleado1.Hide();
+            transicion.ShowSync(agregarEmpleado2);                  
          
         }
-        private void buscador(object sender, EventArgs e)
-        {
-            agregarEmpleado2.Hide();
-            editarEmpleado1.Hide();
-            buscar.Show();
-
-        }
+    
         private void button3_Click(object sender, EventArgs e)
         {
             editarEmpleado1.Hide();
             agregarEmpleado2.Hide();
-            buscar.Show();
+            transicion.ShowSync(buscar);
 
         }
 
@@ -47,7 +41,7 @@ namespace SistemaEmpleadosMVC
         {
             agregarEmpleado2.Hide();
             buscar.Hide();
-            editarEmpleado1.Show();
+            transicion.ShowSync(editarEmpleado1);
 
         }
 
@@ -72,6 +66,17 @@ namespace SistemaEmpleadosMVC
         private void buscar_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Seguro que desea realizar pago de todos los usuarios?", "Pago Mensual",
+            MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            if (result == DialogResult.OK)
+            {
+                //Pagar :v
+            }
+            
         }
     }
 }
