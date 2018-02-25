@@ -61,12 +61,6 @@
       <DependentUpon>Buscador.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +75,12 @@
     </Compile>
     <Compile Include="Forms\VentanaPrincipal.designer.cs">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlForms\DatosEmpleados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlForms\DatosEmpleados.Designer.cs">
+      <DependentUpon>DatosEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlForms\editarEmpleado.cs">
       <SubType>UserControl</SubType>
@@ -114,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlForms\DatosEmpleados.resx">
+      <DependentUpon>DatosEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlForms\editarEmpleado.resx">
       <DependentUpon>editarEmpleado.cs</DependentUpon>

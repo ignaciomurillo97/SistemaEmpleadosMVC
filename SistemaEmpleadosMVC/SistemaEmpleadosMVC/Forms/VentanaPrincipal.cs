@@ -18,7 +18,6 @@ namespace SistemaEmpleadosMVC
             agregarEmpleado2.Hide() ;
             editarEmpleado1.Hide();
             buscar.Hide();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -48,6 +47,7 @@ namespace SistemaEmpleadosMVC
         private void button2_Click(object sender, EventArgs e)
         {
             agregarEmpleado2.Hide();
+            editarEmpleado1.Hide();
             buscar.Hide();
 
         }

@@ -10,7 +10,7 @@ namespace SistemaEmpleadosMVC
 {
     class Conexion
     {
-        SqlConnection connection = new SqlConnection("Data Source=LAPTOP-FO7R70NF;Initial Catalog=Empleados Diseño;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-5NI87TD;Initial Catalog=Empleados Diseño;Integrated Security=True");
         private SqlCommandBuilder cmb;
         public DataSet ds = new DataSet();
         public SqlDataAdapter da;
@@ -32,6 +32,7 @@ namespace SistemaEmpleadosMVC
                 connection.Close();
             }
         }
+
         public bool Ejecutar(string sql)
         {
             connection.Open();
@@ -47,6 +48,7 @@ namespace SistemaEmpleadosMVC
                 return false;
             }
         }
+
         public void infoEmpleados()
         {
             string sql = "select * from Empleado";
@@ -57,8 +59,6 @@ namespace SistemaEmpleadosMVC
             da.Fill(ds, tabla);
 
         }
-
- 
 
         public bool update(string sql)
         {
@@ -76,6 +76,7 @@ namespace SistemaEmpleadosMVC
                 return false;
             }
         }
+
         public List<PuestoClass> ObtenerPuesto()
          {
              List<PuestoClass> listaPuesto = new List<PuestoClass>();
@@ -127,6 +128,7 @@ namespace SistemaEmpleadosMVC
                 "values(" + respPuesto + "," + respCedula+ ", '" + respFechaInicio + "')";
             return Ejecutar(sql);        
         }
+
         public bool editarEmpleado(int respCedula, string respNombre, string respApellido, int respTelefono, string respCorreo, int respPuesto)
         {
             string sql = "update Empleado set Identificación= " + respCedula + ", Nombre='" + respNombre + "', Apellidos='" +
@@ -146,6 +148,7 @@ namespace SistemaEmpleadosMVC
                 return false;
             }
         }
+
         public void editarInfoLaboral(int respPuesto, int respCedula)
         {
             string sql = "update [Información Laboral] set IdPuesto= " + respPuesto + "  where IdEmpleado = " + respCedula;
@@ -166,7 +169,6 @@ namespace SistemaEmpleadosMVC
             cmb = new SqlCommandBuilder(da);
             da.Fill(ds, tabla);
         }
+
     }
 }
-
-

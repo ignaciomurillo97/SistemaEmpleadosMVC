@@ -15,13 +15,13 @@ namespace SistemaEmpleadosMVC
         public Login()
         {
             InitializeComponent();
-        
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
 
         }
+
         private void loginButton_Click(object sender, EventArgs e)
         {
             string username = usernameTextBox.Text;
