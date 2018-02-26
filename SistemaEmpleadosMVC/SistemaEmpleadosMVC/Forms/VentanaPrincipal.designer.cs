@@ -51,6 +51,7 @@
             this.efecto = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.efecto1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.datosEmpleados1 = new SistemaEmpleadosMVC.UserControlForms.DatosEmpleados();
+            this.realizarPago1 = new SistemaEmpleadosMVC.UserControlForms.realizarPago();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -211,18 +212,18 @@
             this.efecto.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.efecto.Cursor = null;
             animation9.AnimateOnlyDifferences = true;
-            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
+            //animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
             animation9.LeafCoeff = 0F;
             animation9.MaxTime = 1F;
             animation9.MinTime = 0F;
-            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
-            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
+            //animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
+            //animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
             animation9.MosaicSize = 1;
             animation9.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
             animation9.RotateCoeff = 0F;
             animation9.RotateLimit = 0F;
-            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
-            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
+            //animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
+            //animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
             animation9.TimeCoeff = 2F;
             animation9.TransparencyCoeff = 0F;
             this.efecto.DefaultAnimation = animation9;
@@ -243,7 +244,7 @@
             animation8.RotateCoeff = 0F;
             animation8.RotateLimit = 0F;
             animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            //animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
             animation8.TimeCoeff = 0F;
             animation8.TransparencyCoeff = 0F;
             this.efecto1.DefaultAnimation = animation8;
@@ -256,6 +257,13 @@
             resources.ApplyResources(this.datosEmpleados1, "datosEmpleados1");
             this.datosEmpleados1.Name = "datosEmpleados1";
             this.datosEmpleados1.Tag = "";
+            // realizarPago1
+            // 
+            this.efecto1.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.realizarPago1, "realizarPago1");
+            this.realizarPago1.Name = "realizarPago1";
             // 
             // VentanaPrincipal
             // 
@@ -263,6 +271,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.datosEmpleados1);
+            this.Controls.Add(this.realizarPago1);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.editarEmpleado1);
@@ -302,5 +311,6 @@
         private BunifuAnimatorNS.BunifuTransition efecto1;
         private System.Windows.Forms.Button button4;
         private UserControlForms.DatosEmpleados datosEmpleados1;
+        private UserControlForms.realizarPago realizarPago1;
     }
 }

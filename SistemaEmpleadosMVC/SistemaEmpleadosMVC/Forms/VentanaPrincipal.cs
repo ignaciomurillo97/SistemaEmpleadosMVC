@@ -22,6 +22,7 @@ namespace SistemaEmpleadosMVC
             editarEmpleado1.Hide();
             datosEmpleados1.Hide();
             buscar.Hide();
+            realizarPago1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,13 +72,9 @@ namespace SistemaEmpleadosMVC
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Seguro que desea realizar pago de todos los usuarios?", "Pago Mensual",
-            MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-            if (result == DialogResult.OK)
-            {
-                //Pagar :v
-            }
-            
+      
+            MostrarVista(realizarPago1);
+
         }
     }
 }
