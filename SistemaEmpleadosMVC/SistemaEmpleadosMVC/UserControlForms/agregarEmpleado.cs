@@ -16,7 +16,7 @@ namespace SistemaEmpleadosMVC
         public agregarEmpleado()
         {
             InitializeComponent();
-            respPuesto.DataSource = db.ObtenerPuestos();
+            respPuesto.DataSource = db.ObtenerPuesto();
             respPuesto.DisplayMember = "Nombre_Puesto";
             respPuesto.ValueMember = "IdPuesto";
         }

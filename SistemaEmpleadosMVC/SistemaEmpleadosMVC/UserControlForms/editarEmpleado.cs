@@ -17,7 +17,7 @@ namespace SistemaEmpleadosMVC.UserControlForms
         {
             InitializeComponent();
             muestraInfo();
-            respPuesto.DataSource = db.ObtenerPuestos();
+            respPuesto.DataSource = db.ObtenerPuesto();
             respPuesto.DisplayMember = "Nombre_Puesto";
             respPuesto.ValueMember = "IdPuesto";
         }

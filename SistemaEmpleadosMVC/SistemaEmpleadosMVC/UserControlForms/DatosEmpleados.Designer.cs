@@ -44,16 +44,13 @@
             this.campoSalario = new System.Windows.Forms.Label();
             this.labelPuesto = new System.Windows.Forms.Label();
             this.labelSalario = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DatosFamiliares = new System.Windows.Forms.DataGridView();
             this.botonHistorialVacaciones = new System.Windows.Forms.Button();
             this.botonHistorialPagos = new System.Windows.Forms.Button();
             this.Atras = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DatosFamiliares)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -255,36 +252,14 @@
             this.labelSalario.TabIndex = 12;
             this.labelSalario.Text = "Salario";
             // 
-            // dataGridView1
+            // DatosFamiliares
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.Apellidos,
-            this.Telefono});
-            this.dataGridView1.Location = new System.Drawing.Point(404, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(362, 332);
-            this.dataGridView1.TabIndex = 12;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Apellidos
-            // 
-            this.Apellidos.HeaderText = "Apellidos";
-            this.Apellidos.Name = "Apellidos";
-            this.Apellidos.ReadOnly = true;
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
+            this.DatosFamiliares.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DatosFamiliares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DatosFamiliares.Location = new System.Drawing.Point(404, 19);
+            this.DatosFamiliares.Name = "DatosFamiliares";
+            this.DatosFamiliares.Size = new System.Drawing.Size(362, 332);
+            this.DatosFamiliares.TabIndex = 12;
             // 
             // botonHistorialVacaciones
             // 
@@ -323,7 +298,7 @@
             this.Controls.Add(this.Atras);
             this.Controls.Add(this.botonHistorialPagos);
             this.Controls.Add(this.botonHistorialVacaciones);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DatosFamiliares);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DatosEmpleados";
@@ -332,7 +307,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DatosFamiliares)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,10 +330,7 @@
         private System.Windows.Forms.Label labelApellidos;
         private System.Windows.Forms.Label campoNombre;
         private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridView DatosFamiliares;
         private System.Windows.Forms.Button botonHistorialVacaciones;
         private System.Windows.Forms.Button botonHistorialPagos;
         private System.Windows.Forms.Button Atras;

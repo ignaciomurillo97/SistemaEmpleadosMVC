@@ -57,7 +57,6 @@ namespace SistemaEmpleadosMVC
             da = new SqlDataAdapter(sql, connection);
             cmb = new SqlCommandBuilder(da);
             da.Fill(ds, tabla);
-
         }
 
         public bool update(string sql)
@@ -77,26 +76,65 @@ namespace SistemaEmpleadosMVC
             }
         }
 
-        public List<PuestoClass> ObtenerPuestos()
-         {
-             List<PuestoClass> listaPuesto = new List<PuestoClass>();
-             connection.Open();
-             SqlCommand comando = new SqlCommand("select * from Puesto", connection);
-             SqlDataReader read = comando.ExecuteReader();
-             while (read.Read())
-             {
-                 PuestoClass qPuesto = new PuestoClass();
-                 int x = int.Parse(read["IdPuesto"].ToString());
+        public void ObtenerDatosFamiliares(int cedula)
+        {
+            string sql = "select infoFam.* " +
+                         "from[Información de Familiares] infoFam " +
+                         "inner join [Relaciones Familiares] relFam on " +
+                         "infoFam.Identificacion = relFam.IdFamiliar where " +
+                         "relFam.IdEmpleado = " + cedula.ToString();
+            string tabla = "[Información de Familiares]";
+            ds.Tables.Clear();
+            da = new SqlDataAdapter(sql, connection);
+            cmb = new SqlCommandBuilder(da);
+            da.Fill(ds, tabla);
+        }
 
-                 decimal y = decimal.Parse(read["Salario Pagado"].ToString());
-                 qPuesto.IdPuesto = x;
-                 qPuesto.Nombre_Puesto = read["Nombre Puesto"].ToString();
-                 qPuesto.Salario_Pagado = y;
-                 listaPuesto.Add(qPuesto);
-             }
-             connection.Close();
-             return listaPuesto;
-         } 
+        public List<PuestoClass> ObtenerPuesto()
+        {
+            List<PuestoClass> listaPuesto = new List<PuestoClass>();
+            connection.Open();
+            SqlCommand comando = new SqlCommand("select * from Puesto", connection);
+            SqlDataReader read = comando.ExecuteReader();
+            while (read.Read())
+            {
+                PuestoClass qPuesto = new PuestoClass();
+                int x = int.Parse(read["IdPuesto"].ToString());
+
+                decimal y = decimal.Parse(read["Salario Pagado"].ToString());
+                qPuesto.IdPuesto = x;
+                qPuesto.Nombre_Puesto = read["Nombre Puesto"].ToString();
+                qPuesto.Salario_Pagado = y;
+                listaPuesto.Add(qPuesto);
+            }
+            connection.Close();
+            return listaPuesto;
+        }
+
+        public PuestoClass ObtenerInformacionLaboral(int cedula)
+        {
+            connection.Open();
+            string sql = "select p.*" +
+                         "from[Información Laboral] il inner join " +
+                         "Puesto p on il.IdPuesto = p.IdPuesto " +
+                         "where IdEmpleado = " + cedula.ToString();
+            SqlCommand comando = new SqlCommand(sql, connection);
+            SqlDataReader read = comando.ExecuteReader();
+
+            PuestoClass puesto = null;
+            if (read.Read())
+            {
+                puesto = new PuestoClass
+                {
+                    IdPuesto = Int32.Parse(read["IdPuesto"].ToString()),
+                    Nombre_Puesto = read["Nombre Puesto"].ToString(),
+                    Salario_Pagado = decimal.Parse(read["Salario Pagado"].ToString())
+                };
+            }
+            connection.Close();
+
+            return puesto;
+        }
 
         public string obtenerSalario(int IdPuesto)
         {

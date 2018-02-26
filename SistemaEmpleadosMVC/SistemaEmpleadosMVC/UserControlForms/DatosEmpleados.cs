@@ -32,6 +32,21 @@ namespace SistemaEmpleadosMVC.UserControlForms
             campoApellido.Text = row["Apellidos"].ToString();
             campoTelefono.Text = row["Teléfono"].ToString();
             campoCorreo.Text = row["Correo"].ToString();
+
+            PuestoClass puesto = db.ObtenerInformacionLaboral(cedula);
+            if (puesto != null)
+            {
+                campoPuesto.Text = puesto.Nombre_Puesto;
+                campoSalario.Text = puesto.Salario_Pagado.ToString();
+            }
+            else
+            {
+                campoPuesto.Text = "Sin Puesto";
+                campoSalario.Text = "Sin Puesto";
+            }
+
+            db.ObtenerDatosFamiliares(cedula);
+            DatosFamiliares.DataSource = db.ds.Tables["[Información de Familiares]"];
         }
     }
 }
