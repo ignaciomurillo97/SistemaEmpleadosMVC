@@ -12,44 +12,29 @@ namespace SistemaEmpleadosMVC
 {
     public partial class VentanaPrincipal : Form
     {
+        UserControl vistaActiva;
+
         public VentanaPrincipal()
         {
             InitializeComponent();
-            agregarEmpleado2.Hide() ;
+            agregarEmpleado2.Hide();
             editarEmpleado1.Hide();
             buscar.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            buscar.Hide();
-            editarEmpleado1.Hide();
-            transicion.ShowSync(agregarEmpleado2);                  
-         
+            mostrarVista(agregarEmpleado2);
         }
     
         private void button3_Click(object sender, EventArgs e)
         {
-            editarEmpleado1.Hide();
-            agregarEmpleado2.Hide();
-            transicion.ShowSync(buscar);
-
+            mostrarVista(buscar);
         }
 
         private void editar_Click(object sender, EventArgs e)
         {
-            agregarEmpleado2.Hide();
-            buscar.Hide();
-            transicion.ShowSync(editarEmpleado1);
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            agregarEmpleado2.Hide();
-            editarEmpleado1.Hide();
-            buscar.Hide();
-
+            mostrarVista(editarEmpleado1);
         }
 
         private void labelTitle_Click(object sender, EventArgs e)
@@ -61,11 +46,22 @@ namespace SistemaEmpleadosMVC
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
 
         private void buscar_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void mostrarVista (UserControl nuevaVista)
+        {
+            if (vistaActiva != null)
+            {
+                vistaActiva.Hide();
+            }
+            transicion.ShowSync(nuevaVista);
+            vistaActiva = nuevaVista;
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -43,13 +43,13 @@
             this.button6 = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.transicion = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.editarEmpleado1 = new SistemaEmpleadosMVC.UserControlForms.editarEmpleado();
+            this.buscar = new SistemaEmpleadosMVC.UserControlForm.Buscador();
+            this.agregarEmpleado2 = new SistemaEmpleadosMVC.agregarEmpleado();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.efecto = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.efecto1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.editarEmpleado1 = new SistemaEmpleadosMVC.UserControlForms.editarEmpleado();
-            this.buscar = new SistemaEmpleadosMVC.UserControlForm.Buscador();
-            this.agregarEmpleado2 = new SistemaEmpleadosMVC.agregarEmpleado();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -176,6 +176,30 @@
             animation3.TransparencyCoeff = 1F;
             this.transicion.DefaultAnimation = animation3;
             // 
+            // editarEmpleado1
+            // 
+            this.efecto1.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.editarEmpleado1, "editarEmpleado1");
+            this.editarEmpleado1.Name = "editarEmpleado1";
+            // 
+            // buscar
+            // 
+            this.efecto1.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.buscar, "buscar");
+            this.buscar.Name = "buscar";
+            // 
+            // agregarEmpleado2
+            // 
+            resources.ApplyResources(this.agregarEmpleado2, "agregarEmpleado2");
+            this.efecto1.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.agregarEmpleado2.Name = "agregarEmpleado2";
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 15;
@@ -222,30 +246,6 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.efecto1.DefaultAnimation = animation1;
-            // 
-            // editarEmpleado1
-            // 
-            this.efecto1.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.editarEmpleado1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.editarEmpleado1, "editarEmpleado1");
-            this.editarEmpleado1.Name = "editarEmpleado1";
-            // 
-            // buscar
-            // 
-            this.efecto1.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.buscar, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.buscar, "buscar");
-            this.buscar.Name = "buscar";
-            // 
-            // agregarEmpleado2
-            // 
-            resources.ApplyResources(this.agregarEmpleado2, "agregarEmpleado2");
-            this.efecto1.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.agregarEmpleado2.Name = "agregarEmpleado2";
             // 
             // VentanaPrincipal
             // 
