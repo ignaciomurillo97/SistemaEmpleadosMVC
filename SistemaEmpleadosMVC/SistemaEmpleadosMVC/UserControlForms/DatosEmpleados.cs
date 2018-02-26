@@ -12,22 +12,25 @@ namespace SistemaEmpleadosMVC.UserControlForms
 {
     public partial class DatosEmpleados : UserControl
     {
-        Conexion db = new Conexion();
+        Conexion db;
 
-        public DatosEmpleados(int cedula)
+        public DatosEmpleados()
         {
+            db = new Conexion();
             InitializeComponent();
-            LlenarCampos(cedula);
         }
 
         public void LlenarCampos(int cedula)
         {
             db.buscarEmpleado(cedula);
+
+            if (db.ds.Tables["Empleado"].Rows.Count == 0) return;
+
             DataRow row = db.ds.Tables["Empleado"].Rows[0];
             campoCedula.Text = row["Identificación"].ToString();
             campoNombre.Text = row["Nombre"].ToString();
-            campoApellido.Text = row["Apellido"].ToString();
-            campoTelefono.Text = row["Telefono"].ToString();
+            campoApellido.Text = row["Apellidos"].ToString();
+            campoTelefono.Text = row["Teléfono"].ToString();
             campoCorreo.Text = row["Correo"].ToString();
         }
     }

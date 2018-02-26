@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaEmpleadosMVC.UserControlForms;
 
 namespace SistemaEmpleadosMVC
 {
@@ -19,22 +20,23 @@ namespace SistemaEmpleadosMVC
             InitializeComponent();
             agregarEmpleado2.Hide();
             editarEmpleado1.Hide();
+            datosEmpleados1.Hide();
             buscar.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mostrarVista(agregarEmpleado2);
+            MostrarVista(agregarEmpleado2);
         }
     
         private void button3_Click(object sender, EventArgs e)
         {
-            mostrarVista(buscar);
+            MostrarVista(buscar);
         }
 
         private void editar_Click(object sender, EventArgs e)
         {
-            mostrarVista(editarEmpleado1);
+            MostrarVista(editarEmpleado1);
         }
 
         private void labelTitle_Click(object sender, EventArgs e)
@@ -54,12 +56,15 @@ namespace SistemaEmpleadosMVC
 
         }
 
-        private void mostrarVista (UserControl nuevaVista)
+        public void MostrarEmpleado (int cedula)
         {
-            if (vistaActiva != null)
-            {
-                vistaActiva.Hide();
-            }
+            datosEmpleados1.LlenarCampos(cedula);
+            MostrarVista(datosEmpleados1);
+        }
+
+        public void MostrarVista (UserControl nuevaVista)
+        {
+            vistaActiva?.Hide();
             transicion.ShowSync(nuevaVista);
             vistaActiva = nuevaVista;
         }

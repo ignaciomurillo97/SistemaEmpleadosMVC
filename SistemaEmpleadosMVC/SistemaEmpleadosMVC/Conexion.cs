@@ -77,7 +77,7 @@ namespace SistemaEmpleadosMVC
             }
         }
 
-        public List<PuestoClass> ObtenerPuesto()
+        public List<PuestoClass> ObtenerPuestos()
          {
              List<PuestoClass> listaPuesto = new List<PuestoClass>();
              connection.Open();

@@ -196,7 +196,6 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.campoPuesto);
             this.panel2.Controls.Add(this.campoSalario);
@@ -328,7 +327,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DatosEmpleados";
-            this.Size = new System.Drawing.Size(783, 448);
+            this.Size = new System.Drawing.Size(783, 449);
             this.Tag = "";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
