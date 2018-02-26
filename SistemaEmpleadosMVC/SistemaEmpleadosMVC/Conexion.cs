@@ -10,7 +10,7 @@ namespace SistemaEmpleadosMVC
 {
     class Conexion
     {
-        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-5NI87TD;Initial Catalog=Empleados Diseño;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=LAPTOP-FO7R70NF;Initial Catalog=Empleados Diseño;Integrated Security=True");
         private SqlCommandBuilder cmb;
         public DataSet ds = new DataSet();
         public SqlDataAdapter da;
@@ -168,6 +168,66 @@ namespace SistemaEmpleadosMVC
             da = new SqlDataAdapter(sql, connection);
             cmb = new SqlCommandBuilder(da);
             da.Fill(ds, tabla);
+        }
+        public Pagos ObtenerDatosPagos()
+        {
+            Pagos DatosPagos = new Pagos();
+            connection.Open();
+            SqlCommand comando = new SqlCommand("SELECT COUNT(E.Nombre) as 'Cantidad Empleados', SUM(P.[Salario Pagado]) as 'Salario Pagado' " +
+                                                "FROM Empleado E " +
+                                                "INNER JOIN[Información Laboral] IL on E.Identificación = IL.IdEmpleado " +
+                                                "INNER JOIN Puesto P on IL.IdPuesto = p.IdPuesto", connection);
+            SqlDataReader read = comando.ExecuteReader();
+            while (read.Read())
+            {
+
+
+                int x = int.Parse(read["Cantidad Empleados"].ToString());
+                decimal y = decimal.Parse(read["Salario Pagado"].ToString());
+
+
+                DatosPagos.Cantidad_de_Empleados = x;
+                DatosPagos.Salario_Pagado = y;
+
+
+            }
+            connection.Close();
+            return DatosPagos;
+        }
+
+        public List<Empleado> ObtenerEmpleados()
+        {
+
+            List<Empleado> listaEmpleados = new List<Empleado>();
+            connection.Open();
+            SqlCommand comando = new SqlCommand("select * from Empleado", connection);
+            SqlDataReader read = comando.ExecuteReader();
+            while (read.Read())
+            {
+                Empleado qEmpleado = new Empleado();
+                int cedula = int.Parse(read["Identificación"].ToString());
+                int telefono = int.Parse(read["Teléfono"].ToString());
+
+                qEmpleado.Identificación = cedula;
+                qEmpleado.Teléfono = telefono;
+
+                qEmpleado.Nombre = read["Nombre"].ToString();
+                qEmpleado.Apellidos = read["Apellidos"].ToString();
+                qEmpleado.Correo = read["Correo"].ToString();
+                listaEmpleados.Add(qEmpleado);
+            }
+            connection.Close();
+            return listaEmpleados;
+        }
+
+        public void RegistrarPagos(List<Empleado> ListaEmpleados)
+        {
+            foreach (Empleado x in ListaEmpleados)
+            {
+                string sql = "insert into [Historial Pagos]([Fecha pago], IdEmpleado) " +
+                "values( GETDATE()," + x.Identificación + ")";
+                Ejecutar(sql);
+            }
         }
 
     }

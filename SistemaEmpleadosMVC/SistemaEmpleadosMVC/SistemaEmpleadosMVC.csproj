@@ -48,6 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Empleado.cs" />
+    <Compile Include="Pagos.cs" />
+    <Compile Include="UserControlForms\realizarPago.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlForms\realizarPago.designer.cs">
+      <DependentUpon>realizarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlForms\agregarEmpleado.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,12 +96,9 @@
     <Compile Include="UserControlForms\editarEmpleado.Designer.cs">
       <DependentUpon>editarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlForms\realizarPago.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlForms\realizarPago.Designer.cs">
+    <EmbeddedResource Include="UserControlForms\realizarPago.resx">
       <DependentUpon>realizarPago.cs</DependentUpon>
-    </Compile>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlForms\agregarEmpleado.resx">
       <DependentUpon>agregarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlForms\editarEmpleado.resx">
       <DependentUpon>editarEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlForms\realizarPago.resx">
-      <DependentUpon>realizarPago.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
