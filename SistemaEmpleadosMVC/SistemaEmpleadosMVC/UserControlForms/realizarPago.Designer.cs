@@ -94,6 +94,7 @@
             this.total.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total.Location = new System.Drawing.Point(172, 23);
             this.total.Name = "total";
+            this.total.ReadOnly = true;
             this.total.Size = new System.Drawing.Size(133, 30);
             this.total.TabIndex = 2;
             // 
@@ -127,6 +128,7 @@
             this.cantidad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cantidad.Location = new System.Drawing.Point(237, 64);
             this.cantidad.Name = "cantidad";
+            this.cantidad.ReadOnly = true;
             this.cantidad.Size = new System.Drawing.Size(68, 30);
             this.cantidad.TabIndex = 5;
             // 

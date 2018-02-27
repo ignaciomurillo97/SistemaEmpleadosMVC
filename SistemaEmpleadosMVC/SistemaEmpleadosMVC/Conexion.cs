@@ -60,6 +60,16 @@ namespace SistemaEmpleadosMVC
             cmb = new SqlCommandBuilder(da);
             da.Fill(ds, tabla);
         }
+        public void infoPuesto()
+        {
+            string sql = "select * from Puesto";
+            string tabla = "Puesto";
+            ds.Tables.Clear();
+            da = new SqlDataAdapter(sql, connection);
+            cmb = new SqlCommandBuilder(da);
+            da.Fill(ds, tabla);
+
+        }
 
         public bool update(string sql)
         {
@@ -218,7 +228,7 @@ namespace SistemaEmpleadosMVC
 
         public void buscarEmpleado(int respCedula)
         {
-            string sql = "select * from Empleado where Identificación = " + respCedula;
+            string sql = "select * from Empleado where Identificación like '%" + respCedula + "%'";
        
             string tabla = "Empleado";
             ds.Tables.Clear();
@@ -286,6 +296,32 @@ namespace SistemaEmpleadosMVC
                 Ejecutar(sql);
             }
         }
+        public bool agregarPuesto(string nombre, decimal salario)
+        {
+            string sql = "insert into Puesto([Nombre Puesto], [Salario Pagado]) " +
+              "values('"+nombre+"'," +salario+ ")";
+            return Ejecutar(sql);
+        }
 
+        public bool editarPuesto(int IdPuesto, string respPuesto, decimal respSalario)
+        {
+            string sql = "update Puesto set [Nombre Puesto]='" + respPuesto + "', [Salario Pagado]= " + respSalario +
+                " where IdPuesto = " + IdPuesto;
+
+            
+            connection.Open();
+            command = new SqlCommand(sql, connection);
+
+            int x = command.ExecuteNonQuery();
+            connection.Close();
+            if (x < 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

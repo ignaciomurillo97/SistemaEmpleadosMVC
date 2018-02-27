@@ -26,9 +26,17 @@ namespace SistemaEmpleadosMVC.UserControlForm
 
         private void buscar_Click(object sender, EventArgs e)
         {
-
-            db.buscarEmpleado(Convert.ToInt32(busca.Text));
-            data.DataSource = db.ds.Tables["Empleado"];
+            if (busca.Text != "")
+            {
+                db.buscarEmpleado(Convert.ToInt32(busca.Text));
+                data.DataSource = db.ds.Tables["Empleado"];
+            }
+            else
+            {
+                db.infoEmpleados();
+                data.DataSource = db.ds.Tables["Empleado"];
+            }
+            
         }
 
         private void muestraInfo()
@@ -42,9 +50,18 @@ namespace SistemaEmpleadosMVC.UserControlForm
            
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
-                db.buscarEmpleado(Convert.ToInt32(busca.Text));
-                data.DataSource = db.ds.Tables["Empleado"];
+                if (busca.Text != "")
+                {
+                    db.buscarEmpleado(Convert.ToInt32(busca.Text));
+                    data.DataSource = db.ds.Tables["Empleado"];
+                }
+                else
+                {
+                    db.infoEmpleados();
+                    data.DataSource = db.ds.Tables["Empleado"];
+                }
             }
+
 
         }
 

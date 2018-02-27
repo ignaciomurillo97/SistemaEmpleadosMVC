@@ -14,7 +14,7 @@ namespace SistemaEmpleadosMVC
     public partial class VentanaPrincipal : Form
     {
         UserControl vistaActiva;
-
+        Button botonActivo;
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -23,22 +23,26 @@ namespace SistemaEmpleadosMVC
             datosEmpleados1.Hide();
             buscar.Hide();
             realizarPago1.Hide();
+            agregarPuesto1.Hide();
             historialVacaciones1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarVista(agregarEmpleado2);
+            setBack(button1);
+            mostrarVista(agregarEmpleado2);
         }
     
         private void button3_Click(object sender, EventArgs e)
         {
-            MostrarVista(buscar);
+            setBack(button3);
+            mostrarVista(buscar);
         }
 
         private void editar_Click(object sender, EventArgs e)
         {
-            MostrarVista(editarEmpleado1);
+            setBack(button2);
+            mostrarVista(editarEmpleado1);
         }
 
         private void labelTitle_Click(object sender, EventArgs e)
@@ -49,6 +53,7 @@ namespace SistemaEmpleadosMVC
 
         private void button6_Click(object sender, EventArgs e)
         {
+
             this.Close();
             Application.Exit();
         }
@@ -79,7 +84,26 @@ namespace SistemaEmpleadosMVC
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MostrarVista(realizarPago1);
+            setBack(button4);
+            mostrarVista(realizarPago1);
+
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            setBack(button5);
+            mostrarVista(agregarPuesto1);
+        }
+        public void setBack(Button pboton)
+        {
+            if (botonActivo != null)
+            {
+                botonActivo.BackColor = Color.DodgerBlue;
+            }
+            pboton.BackColor = Color.LightSkyBlue;
+            botonActivo = pboton;
+
+        }
+
     }
 }

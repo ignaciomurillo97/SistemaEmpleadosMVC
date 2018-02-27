@@ -50,6 +50,12 @@
   <ItemGroup>
     <Compile Include="Empleado.cs" />
     <Compile Include="Pagos.cs" />
+    <Compile Include="UserControlForms\agregarPuesto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlForms\agregarPuesto.Designer.cs">
+      <DependentUpon>agregarPuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlForms\HistorialVacaciones.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="UserControlForms\HistorialVacaciones.resx">
       <DependentUpon>HistorialVacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlForms\agregarPuesto.resx">
+      <DependentUpon>agregarPuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlForms\realizarPago.resx">
       <DependentUpon>realizarPago.cs</DependentUpon>
