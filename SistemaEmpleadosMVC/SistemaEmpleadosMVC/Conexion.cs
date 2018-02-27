@@ -59,6 +59,16 @@ namespace SistemaEmpleadosMVC
             da.Fill(ds, tabla);
 
         }
+        public void infoPuesto()
+        {
+            string sql = "select * from Puesto";
+            string tabla = "Puesto";
+            ds.Tables.Clear();
+            da = new SqlDataAdapter(sql, connection);
+            cmb = new SqlCommandBuilder(da);
+            da.Fill(ds, tabla);
+
+        }
 
         public bool update(string sql)
         {
@@ -229,6 +239,13 @@ namespace SistemaEmpleadosMVC
                 Ejecutar(sql);
             }
         }
+        public bool agregarPuesto(string nombre, decimal salario)
+        {
+            string sql = "insert into Puesto([Nombre Puesto], [Salario Pagado]) " +
+              "values( '"+nombre+"'," +salario+ ")";
+            return Ejecutar(sql);
+        }
+
 
     }
 }

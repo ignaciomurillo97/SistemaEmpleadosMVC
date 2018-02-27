@@ -21,6 +21,7 @@ namespace SistemaEmpleadosMVC
             editarEmpleado1.Hide();
             buscar.Hide();
             realizarPago1.Hide();
+            agregarPuesto1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace SistemaEmpleadosMVC
 
         private void button6_Click(object sender, EventArgs e)
         {
+
             this.Close();
             Application.Exit();
         }
@@ -70,6 +72,11 @@ namespace SistemaEmpleadosMVC
       
             mostrarVista(realizarPago1);
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            mostrarVista(agregarPuesto1);
         }
     }
 }
