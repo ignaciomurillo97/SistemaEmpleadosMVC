@@ -68,7 +68,7 @@
             this.panel1.Controls.Add(this.labelCedula);
             this.panel1.Location = new System.Drawing.Point(18, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 241);
+            this.panel1.Size = new System.Drawing.Size(306, 241);
             this.panel1.TabIndex = 6;
             // 
             // campoCorreo
@@ -79,7 +79,7 @@
             this.campoCorreo.Location = new System.Drawing.Point(27, 203);
             this.campoCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoCorreo.Name = "campoCorreo";
-            this.campoCorreo.Size = new System.Drawing.Size(305, 24);
+            this.campoCorreo.Size = new System.Drawing.Size(275, 24);
             this.campoCorreo.TabIndex = 21;
             this.campoCorreo.Text = "12345678";
             // 
@@ -103,7 +103,7 @@
             this.campoTelefono.Location = new System.Drawing.Point(26, 160);
             this.campoTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoTelefono.Name = "campoTelefono";
-            this.campoTelefono.Size = new System.Drawing.Size(305, 24);
+            this.campoTelefono.Size = new System.Drawing.Size(275, 24);
             this.campoTelefono.TabIndex = 19;
             this.campoTelefono.Text = "12345678";
             // 
@@ -127,7 +127,7 @@
             this.campoApellido.Location = new System.Drawing.Point(27, 117);
             this.campoApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoApellido.Name = "campoApellido";
-            this.campoApellido.Size = new System.Drawing.Size(305, 24);
+            this.campoApellido.Size = new System.Drawing.Size(275, 24);
             this.campoApellido.TabIndex = 17;
             this.campoApellido.Text = "12345678";
             // 
@@ -151,7 +151,7 @@
             this.campoNombre.Location = new System.Drawing.Point(27, 74);
             this.campoNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoNombre.Name = "campoNombre";
-            this.campoNombre.Size = new System.Drawing.Size(305, 24);
+            this.campoNombre.Size = new System.Drawing.Size(275, 24);
             this.campoNombre.TabIndex = 15;
             this.campoNombre.Text = "12345678";
             // 
@@ -175,7 +175,7 @@
             this.campoCedula.Location = new System.Drawing.Point(27, 31);
             this.campoCedula.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoCedula.Name = "campoCedula";
-            this.campoCedula.Size = new System.Drawing.Size(305, 24);
+            this.campoCedula.Size = new System.Drawing.Size(275, 24);
             this.campoCedula.TabIndex = 13;
             this.campoCedula.Text = "12345678";
             // 
@@ -200,7 +200,7 @@
             this.panel2.Controls.Add(this.labelSalario);
             this.panel2.Location = new System.Drawing.Point(18, 302);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(350, 106);
+            this.panel2.Size = new System.Drawing.Size(306, 106);
             this.panel2.TabIndex = 11;
             // 
             // campoPuesto
@@ -211,7 +211,7 @@
             this.campoPuesto.Location = new System.Drawing.Point(27, 24);
             this.campoPuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoPuesto.Name = "campoPuesto";
-            this.campoPuesto.Size = new System.Drawing.Size(305, 24);
+            this.campoPuesto.Size = new System.Drawing.Size(275, 24);
             this.campoPuesto.TabIndex = 13;
             this.campoPuesto.Text = "Puesto";
             // 
@@ -223,7 +223,7 @@
             this.campoSalario.Location = new System.Drawing.Point(26, 79);
             this.campoSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.campoSalario.Name = "campoSalario";
-            this.campoSalario.Size = new System.Drawing.Size(306, 20);
+            this.campoSalario.Size = new System.Drawing.Size(276, 20);
             this.campoSalario.TabIndex = 14;
             this.campoSalario.Text = "Salario";
             // 
@@ -256,7 +256,7 @@
             // 
             this.DatosFamiliares.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DatosFamiliares.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DatosFamiliares.Location = new System.Drawing.Point(404, 19);
+            this.DatosFamiliares.Location = new System.Drawing.Point(346, 19);
             this.DatosFamiliares.Name = "DatosFamiliares";
             this.DatosFamiliares.Size = new System.Drawing.Size(362, 332);
             this.DatosFamiliares.TabIndex = 12;
@@ -264,17 +264,18 @@
             // botonHistorialVacaciones
             // 
             this.botonHistorialVacaciones.BackColor = System.Drawing.Color.DodgerBlue;
-            this.botonHistorialVacaciones.Location = new System.Drawing.Point(404, 371);
+            this.botonHistorialVacaciones.Location = new System.Drawing.Point(346, 371);
             this.botonHistorialVacaciones.Name = "botonHistorialVacaciones";
             this.botonHistorialVacaciones.Size = new System.Drawing.Size(103, 37);
             this.botonHistorialVacaciones.TabIndex = 13;
             this.botonHistorialVacaciones.Text = "Historial Vacaciones";
             this.botonHistorialVacaciones.UseVisualStyleBackColor = false;
+            this.botonHistorialVacaciones.Click += new System.EventHandler(this.botonHistorialVacaciones_Click);
             // 
             // botonHistorialPagos
             // 
             this.botonHistorialPagos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.botonHistorialPagos.Location = new System.Drawing.Point(532, 371);
+            this.botonHistorialPagos.Location = new System.Drawing.Point(474, 371);
             this.botonHistorialPagos.Name = "botonHistorialPagos";
             this.botonHistorialPagos.Size = new System.Drawing.Size(103, 37);
             this.botonHistorialPagos.TabIndex = 13;
@@ -284,7 +285,7 @@
             // Atras
             // 
             this.Atras.BackColor = System.Drawing.Color.DodgerBlue;
-            this.Atras.Location = new System.Drawing.Point(663, 371);
+            this.Atras.Location = new System.Drawing.Point(605, 371);
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(103, 37);
             this.Atras.TabIndex = 13;
@@ -302,7 +303,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DatosEmpleados";
-            this.Size = new System.Drawing.Size(783, 449);
+            this.Size = new System.Drawing.Size(727, 449);
             this.Tag = "";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

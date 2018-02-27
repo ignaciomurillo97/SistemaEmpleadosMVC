@@ -13,6 +13,7 @@ namespace SistemaEmpleadosMVC.UserControlForms
     public partial class DatosEmpleados : UserControl
     {
         Conexion db;
+        private int cedula;
 
         public DatosEmpleados()
         {
@@ -23,6 +24,7 @@ namespace SistemaEmpleadosMVC.UserControlForms
         public void LlenarCampos(int cedula)
         {
             db.buscarEmpleado(cedula);
+            this.cedula = cedula;
 
             if (db.ds.Tables["Empleado"].Rows.Count == 0) return;
 
@@ -47,6 +49,12 @@ namespace SistemaEmpleadosMVC.UserControlForms
 
             db.ObtenerDatosFamiliares(cedula);
             DatosFamiliares.DataSource = db.ds.Tables["[Información de Familiares]"];
+        }
+
+        private void botonHistorialVacaciones_Click(object sender, EventArgs e)
+        {
+            VentanaPrincipal padre = (this.Parent as VentanaPrincipal);
+            padre.MostrarHistorialVacaciones(cedula);
         }
     }
 }

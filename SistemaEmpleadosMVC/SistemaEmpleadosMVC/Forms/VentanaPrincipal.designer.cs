@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
-            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,12 +46,13 @@
             this.editarEmpleado1 = new SistemaEmpleadosMVC.UserControlForms.editarEmpleado();
             this.buscar = new SistemaEmpleadosMVC.UserControlForm.Buscador();
             this.agregarEmpleado2 = new SistemaEmpleadosMVC.agregarEmpleado();
+            this.datosEmpleados1 = new SistemaEmpleadosMVC.UserControlForms.DatosEmpleados();
+            this.realizarPago1 = new SistemaEmpleadosMVC.UserControlForms.realizarPago();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.efecto = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.efecto1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.datosEmpleados1 = new SistemaEmpleadosMVC.UserControlForms.DatosEmpleados();
-            this.realizarPago1 = new SistemaEmpleadosMVC.UserControlForms.realizarPago();
+            this.historialVacaciones1 = new SistemaEmpleadosMVC.UserControlForms.HistorialVacaciones();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -161,22 +162,22 @@
             // 
             this.transicion.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.transicion.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 0;
-            animation7.Padding = new System.Windows.Forms.Padding(0);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 1F;
-            this.transicion.DefaultAnimation = animation7;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.transicion.DefaultAnimation = animation3;
             // 
             // editarEmpleado1
             // 
@@ -202,6 +203,23 @@
             this.transicion.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
             this.agregarEmpleado2.Name = "agregarEmpleado2";
             // 
+            // datosEmpleados1
+            // 
+            this.efecto1.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.datosEmpleados1, "datosEmpleados1");
+            this.datosEmpleados1.Name = "datosEmpleados1";
+            this.datosEmpleados1.Tag = "";
+            // 
+            // realizarPago1
+            // 
+            this.efecto1.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.realizarPago1, "realizarPago1");
+            this.realizarPago1.Name = "realizarPago1";
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 15;
@@ -211,65 +229,58 @@
             // 
             this.efecto.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.efecto.Cursor = null;
-            animation9.AnimateOnlyDifferences = true;
-            //animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
-            animation9.LeafCoeff = 0F;
-            animation9.MaxTime = 1F;
-            animation9.MinTime = 0F;
-            //animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
-            //animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
-            animation9.MosaicSize = 1;
-            animation9.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation9.RotateCoeff = 0F;
-            animation9.RotateLimit = 0F;
-            //animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
-            //animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
-            animation9.TimeCoeff = 2F;
-            animation9.TransparencyCoeff = 0F;
-            this.efecto.DefaultAnimation = animation9;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 1;
+            animation2.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 2F;
+            animation2.TransparencyCoeff = 0F;
+            this.efecto.DefaultAnimation = animation2;
             // 
             // efecto1
             // 
             this.efecto1.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind;
             this.efecto1.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            //animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.efecto1.DefaultAnimation = animation8;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.efecto1.DefaultAnimation = animation1;
             // 
-            // datosEmpleados1
+            // historialVacaciones1
             // 
-            this.efecto1.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.datosEmpleados1, "datosEmpleados1");
-            this.datosEmpleados1.Name = "datosEmpleados1";
-            this.datosEmpleados1.Tag = "";
-            // realizarPago1
-            // 
-            this.efecto1.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.realizarPago1, "realizarPago1");
-            this.realizarPago1.Name = "realizarPago1";
+            this.efecto1.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.historialVacaciones1, "historialVacaciones1");
+            this.historialVacaciones1.Name = "historialVacaciones1";
             // 
             // VentanaPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.historialVacaciones1);
             this.Controls.Add(this.datosEmpleados1);
             this.Controls.Add(this.realizarPago1);
             this.Controls.Add(this.panelHeader);
@@ -312,5 +323,6 @@
         private System.Windows.Forms.Button button4;
         private UserControlForms.DatosEmpleados datosEmpleados1;
         private UserControlForms.realizarPago realizarPago1;
+        private UserControlForms.HistorialVacaciones historialVacaciones1;
     }
 }

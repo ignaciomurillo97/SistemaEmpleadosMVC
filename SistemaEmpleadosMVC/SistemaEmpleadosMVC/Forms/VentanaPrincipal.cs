@@ -23,6 +23,7 @@ namespace SistemaEmpleadosMVC
             datosEmpleados1.Hide();
             buscar.Hide();
             realizarPago1.Hide();
+            historialVacaciones1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +64,12 @@ namespace SistemaEmpleadosMVC
             MostrarVista(datosEmpleados1);
         }
 
+        public void MostrarHistorialVacaciones(int cedula)
+        {
+            historialVacaciones1.llenarDatos(cedula);
+            MostrarVista(historialVacaciones1);
+        }
+
         public void MostrarVista (UserControl nuevaVista)
         {
             vistaActiva?.Hide();
@@ -72,9 +79,7 @@ namespace SistemaEmpleadosMVC
 
         private void button4_Click(object sender, EventArgs e)
         {
-      
             MostrarVista(realizarPago1);
-
         }
     }
 }

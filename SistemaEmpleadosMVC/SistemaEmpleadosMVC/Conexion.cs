@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
+using System.Diagnostics;
+
 namespace SistemaEmpleadosMVC
 {
     class Conexion
@@ -88,6 +90,23 @@ namespace SistemaEmpleadosMVC
             da = new SqlDataAdapter(sql, connection);
             cmb = new SqlCommandBuilder(da);
             da.Fill(ds, tabla);
+        }
+
+        public void ObtenerHistorialVacaciones(int cedula)
+        {
+            string sql = "select * from [Historial de Vacaciones] where IdEmpleado = " + cedula.ToString();
+            string tabla = "[Historial de Vacaciones]";
+            ds.Tables.Clear();
+            da = new SqlDataAdapter(sql, connection);
+            cmb = new SqlCommandBuilder(da);
+            da.Fill(ds, tabla);
+        }
+
+        public bool AgregarVacaciones(int cedula, DateTime fechaInicial, DateTime fechaFinal)
+        {
+            string sql = "insert into [Historial de Vacaciones](IdEmpleado, [Fecha Inicio], [Fecha Fin])" +
+                         "values (" + cedula + ", '" + fechaInicial.ToString("yyyy-MM-dd") + "' , '" + fechaFinal.ToString("yyyy-MM-dd") + "')";
+            return Ejecutar(sql);
         }
 
         public List<PuestoClass> ObtenerPuesto()
