@@ -246,6 +246,25 @@ namespace SistemaEmpleadosMVC
             return Ejecutar(sql);
         }
 
+        public bool editarPuesto(int IdPuesto, string respPuesto, decimal respSalario)
+        {
+            string sql = "update Puesto set [Nombre Puesto]='" + respPuesto + "', [Salario Pagado]= " + respSalario +
+                " where IdPuesto = " + IdPuesto;
 
+            
+            connection.Open();
+            command = new SqlCommand(sql, connection);
+
+            int x = command.ExecuteNonQuery();
+            connection.Close();
+            if (x < 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

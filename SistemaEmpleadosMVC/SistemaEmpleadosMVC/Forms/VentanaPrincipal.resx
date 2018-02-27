@@ -251,13 +251,13 @@
     <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 333</value>
+    <value>4, 409</value>
   </data>
   <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 48</value>
+    <value>285, 59</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button5.TabIndex" type="System.Int32, mscorlib">
@@ -304,13 +304,13 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 281</value>
+    <value>0, 345</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 48</value>
+    <value>285, 59</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -348,13 +348,13 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 220</value>
+    <value>0, 270</value>
   </data>
   <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 56</value>
+    <value>285, 69</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -398,13 +398,13 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 168</value>
+    <value>0, 206</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 48</value>
+    <value>285, 59</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -452,13 +452,13 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 112</value>
+    <value>-3, 137</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 52</value>
+    <value>291, 64</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -511,13 +511,13 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 34</value>
+    <value>70, 42</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 74</value>
+    <value>151, 91</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -544,10 +544,10 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 574</value>
+    <value>285, 704</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -562,7 +562,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -581,13 +581,13 @@
     <value>NoControl</value>
   </data>
   <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>867, 2</value>
+    <value>1103, 2</value>
   </data>
   <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 32</value>
+    <value>45, 39</value>
   </data>
   <data name="button6.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -611,13 +611,13 @@
     <value>Top</value>
   </data>
   <data name="panelHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 0</value>
+    <value>285, 0</value>
   </data>
   <data name="panelHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panelHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>878, 44</value>
+    <value>1118, 54</value>
   </data>
   <data name="panelHeader.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -632,7 +632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelHeader.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>256, 17</value>
@@ -644,55 +644,22 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>11, 22</value>
+    <value>14, 27</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1102, 574</value>
-  </data>
-  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 106</value>
-  </data>
-  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>911, 405</value>
-  </data>
-  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
-    <value>agregarEmpleado2</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1403, 704</value>
   </data>
   <data name="agregarPuesto1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 50</value>
+    <value>438, 61</value>
   </data>
   <data name="agregarPuesto1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="agregarPuesto1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>846, 555</value>
+    <value>1118, 650</value>
   </data>
   <data name="agregarPuesto1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -707,16 +674,49 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;agregarPuesto1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 130</value>
+  </data>
+  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1159, 497</value>
+  </data>
+  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
+    <value>agregarEmpleado2</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="realizarPago1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 72</value>
+    <value>508, 88</value>
   </data>
   <data name="realizarPago1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="realizarPago1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>481, 491</value>
+    <value>612, 603</value>
   </data>
   <data name="realizarPago1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -734,13 +734,13 @@
     <value>4</value>
   </data>
   <data name="editarEmpleado1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 40</value>
+    <value>285, 49</value>
   </data>
   <data name="editarEmpleado1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="editarEmpleado1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 551</value>
+    <value>1128, 676</value>
   </data>
   <data name="editarEmpleado1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -758,13 +758,13 @@
     <value>5</value>
   </data>
   <data name="buscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 72</value>
+    <value>288, 88</value>
   </data>
   <data name="buscar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buscar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 439</value>
+    <value>1106, 539</value>
   </data>
   <data name="buscar.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -788,7 +788,7 @@
     <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
