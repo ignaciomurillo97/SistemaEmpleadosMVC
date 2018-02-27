@@ -10,7 +10,7 @@ namespace SistemaEmpleadosMVC
 {
     class Conexion
     {
-        SqlConnection connection = new SqlConnection("Data Source=LAPTOP-FO7R70NF;Initial Catalog=Empleados Diseño;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-7G3FICJ;Initial Catalog=Empleados Diseño;Integrated Security=True");
         private SqlCommandBuilder cmb;
         public DataSet ds = new DataSet();
         public SqlDataAdapter da;
@@ -171,7 +171,7 @@ namespace SistemaEmpleadosMVC
 
         public void buscarEmpleado(int respCedula)
         {
-            string sql = "select * from Empleado where Identificación = " + respCedula;
+            string sql = "select * from Empleado where Identificación like '%" + respCedula + "%'";
        
             string tabla = "Empleado";
             ds.Tables.Clear();
@@ -242,7 +242,7 @@ namespace SistemaEmpleadosMVC
         public bool agregarPuesto(string nombre, decimal salario)
         {
             string sql = "insert into Puesto([Nombre Puesto], [Salario Pagado]) " +
-              "values( '"+nombre+"'," +salario+ ")";
+              "values('"+nombre+"'," +salario+ ")";
             return Ejecutar(sql);
         }
 
