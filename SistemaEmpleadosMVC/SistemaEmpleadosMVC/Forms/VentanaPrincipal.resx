@@ -284,7 +284,6 @@
   <data name="button4.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAnZJREFUSEvV
@@ -313,7 +312,6 @@
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>285, 59</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -549,7 +547,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 704</value>
+    <value>285, 589</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -564,7 +562,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -619,7 +617,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="panelHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1118, 54</value>
+    <value>772, 54</value>
   </data>
   <data name="panelHeader.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -634,7 +632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelHeader.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>256, 17</value>
@@ -645,107 +643,71 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="editarEmpleado1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 35</value>
-  </data>
-  <data name="editarEmpleado1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
-  </data>
-  <data name="editarEmpleado1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>724, 502</value>
-  </data>
-  <data name="editarEmpleado1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;editarEmpleado1.Name" xml:space="preserve">
-    <value>editarEmpleado1</value>
-  </data>
-  <data name="&gt;&gt;editarEmpleado1.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.UserControlForms.editarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1403, 704</value>
-  </data>
-  <data name="&gt;&gt;editarEmpleado1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>1057, 589</value>
   </data>
   <data name="buscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>184, 65</value>
-  </data>
-  <data name="agregarPuesto1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 61</value>
-  </data>
-  <data name="agregarPuesto1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+    <value>285, 50</value>
   </data>
   <data name="buscar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="buscar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>711, 398</value>
+    <value>1106, 539</value>
   </data>
-  <data name="agregarPuesto1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1118, 650</value>
+  <data name="buscar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="agregarPuesto1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;buscar.Name" xml:space="preserve">
+    <value>buscar</value>
   </data>
-  <data name="&gt;&gt;agregarPuesto1.Name" xml:space="preserve">
-    <value>agregarPuesto1</value>
+  <data name="&gt;&gt;buscar.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.UserControlForm.Buscador, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;agregarPuesto1.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.UserControlForms.agregarPuesto, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;agregarPuesto1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buscar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buscar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="historialVacaciones1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 8pt</value>
+  </data>
+  <data name="historialVacaciones1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 49</value>
+  </data>
+  <data name="historialVacaciones1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="historialVacaciones1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>907, 554</value>
+  </data>
+  <data name="historialVacaciones1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;agregarPuesto1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;historialVacaciones1.Name" xml:space="preserve">
+    <value>historialVacaciones1</value>
   </data>
-  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;historialVacaciones1.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.UserControlForms.HistorialVacaciones, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 130</value>
-  </data>
-  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1159, 497</value>
-  </data>
-  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
-    <value>agregarEmpleado2</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;historialVacaciones1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;historialVacaciones1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="datosEmpleados1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9pt</value>
   </data>
   <data name="datosEmpleados1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 37</value>
+    <value>285, 49</value>
   </data>
   <data name="datosEmpleados1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 5, 3, 5</value>
@@ -766,10 +728,67 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;datosEmpleados1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
+  </data>
+  <data name="agregarPuesto1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 49</value>
+  </data>
+  <data name="agregarPuesto1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="agregarPuesto1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1118, 650</value>
+  </data>
+  <data name="agregarPuesto1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;agregarPuesto1.Name" xml:space="preserve">
+    <value>agregarPuesto1</value>
+  </data>
+  <data name="&gt;&gt;agregarPuesto1.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.UserControlForms.agregarPuesto, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agregarPuesto1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;agregarPuesto1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 49</value>
+  </data>
+  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1159, 497</value>
+  </data>
+  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
+    <value>agregarEmpleado2</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="realizarPago1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 88</value>
+    <value>285, 49</value>
   </data>
   <data name="realizarPago1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -790,7 +809,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;realizarPago1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="editarEmpleado1.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 49</value>
@@ -814,76 +833,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;editarEmpleado1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="buscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 88</value>
-  </data>
-  <data name="buscar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="buscar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1106, 539</value>
-  </data>
-  <data name="buscar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buscar.Name" xml:space="preserve">
-    <value>buscar</value>
-  </data>
-  <data name="&gt;&gt;buscar.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.UserControlForm.Buscador, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;buscar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buscar.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>112, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1057, 589</value>
-  </data>
-  <data name="historialVacaciones1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 8pt</value>
-  </data>
-  <data name="historialVacaciones1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 35</value>
-  </data>
-  <data name="historialVacaciones1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="historialVacaciones1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>907, 554</value>
-  </data>
-  <data name="historialVacaciones1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;historialVacaciones1.Name" xml:space="preserve">
-    <value>historialVacaciones1</value>
-  </data>
-  <data name="&gt;&gt;historialVacaciones1.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.UserControlForms.HistorialVacaciones, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;historialVacaciones1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;historialVacaciones1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>8</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
