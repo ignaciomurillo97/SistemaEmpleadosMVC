@@ -562,7 +562,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -632,7 +632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelHeader.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>256, 17</value>
@@ -651,6 +651,39 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1102, 574</value>
+  </data>
+  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 106</value>
+  </data>
+  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>911, 405</value>
+  </data>
+  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
+    <value>agregarEmpleado2</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
+    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="agregarPuesto1.Location" type="System.Drawing.Point, System.Drawing">
     <value>307, 50</value>
@@ -674,7 +707,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;agregarPuesto1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="realizarPago1.Location" type="System.Drawing.Point, System.Drawing">
     <value>399, 72</value>
@@ -698,7 +731,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;realizarPago1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="editarEmpleado1.Location" type="System.Drawing.Point, System.Drawing">
     <value>224, 40</value>
@@ -722,7 +755,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;editarEmpleado1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buscar.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 72</value>
@@ -746,39 +779,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buscar.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="agregarEmpleado2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="agregarEmpleado2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="agregarEmpleado2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="agregarEmpleado2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 72</value>
-  </data>
-  <data name="agregarEmpleado2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="agregarEmpleado2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>911, 405</value>
-  </data>
-  <data name="agregarEmpleado2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Name" xml:space="preserve">
-    <value>agregarEmpleado2</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Type" xml:space="preserve">
-    <value>SistemaEmpleadosMVC.agregarEmpleado, SistemaEmpleadosMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;agregarEmpleado2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">

@@ -73,6 +73,7 @@
             this.salario.Name = "salario";
             this.salario.Size = new System.Drawing.Size(118, 30);
             this.salario.TabIndex = 2;
+            this.salario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.salario_KeyPress);
             // 
             // bunifuCustomLabel2
             // 
@@ -157,11 +158,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.data.DefaultCellStyle = dataGridViewCellStyle2;
-            this.data.Location = new System.Drawing.Point(92, 42);
+            this.data.Location = new System.Drawing.Point(74, 42);
             this.data.Name = "data";
             this.data.ReadOnly = true;
             this.data.RowTemplate.Height = 24;
-            this.data.Size = new System.Drawing.Size(360, 148);
+            this.data.Size = new System.Drawing.Size(370, 148);
             this.data.TabIndex = 1;
             // 
             // agregarPuesto

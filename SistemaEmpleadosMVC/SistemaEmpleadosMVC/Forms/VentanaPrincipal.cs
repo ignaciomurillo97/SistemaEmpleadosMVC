@@ -13,7 +13,7 @@ namespace SistemaEmpleadosMVC
     public partial class VentanaPrincipal : Form
     {
         UserControl vistaActiva;
-
+        Button botonActivo;
         public VentanaPrincipal()
         {
             InitializeComponent();
@@ -26,16 +26,20 @@ namespace SistemaEmpleadosMVC
 
         private void button1_Click(object sender, EventArgs e)
         {
+            setBack(button1);
             mostrarVista(agregarEmpleado2);
+           
         }
     
         private void button3_Click(object sender, EventArgs e)
         {
+            setBack(button3);
             mostrarVista(buscar);
         }
 
         private void editar_Click(object sender, EventArgs e)
         {
+            setBack(button2);
             mostrarVista(editarEmpleado1);
         }
 
@@ -69,14 +73,26 @@ namespace SistemaEmpleadosMVC
 
         private void button4_Click(object sender, EventArgs e)
         {
-      
+            setBack(button4);
             mostrarVista(realizarPago1);
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            setBack(button5);
             mostrarVista(agregarPuesto1);
         }
+        public void setBack(Button pboton)
+        {
+            if (botonActivo != null)
+            {
+                botonActivo.BackColor = Color.DodgerBlue;
+            }
+            pboton.BackColor = Color.LightSkyBlue;
+            botonActivo = pboton;
+
+        }
+
     }
 }

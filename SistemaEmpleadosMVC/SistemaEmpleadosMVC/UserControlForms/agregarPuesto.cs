@@ -49,5 +49,22 @@ namespace SistemaEmpleadosMVC.UserControlForms
         {
 
         }
+
+        private void salario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                bool flag = db.agregarPuesto(puesto.Text, decimal.Parse(salario.Text));
+                if (flag == false)
+                {
+                    MessageBox.Show("Puesto agregado correctamente.");
+                    muestraInfo();
+                }
+                else
+                {
+                    MessageBox.Show("Algo salio mal!");
+                }
+            }
+        }
     }
 }
