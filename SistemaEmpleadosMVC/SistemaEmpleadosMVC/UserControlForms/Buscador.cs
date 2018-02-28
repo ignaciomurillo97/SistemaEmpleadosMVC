@@ -21,8 +21,9 @@ namespace SistemaEmpleadosMVC.UserControlForm
 
         private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
+
 
         private void buscar_Click(object sender, EventArgs e)
         {
@@ -39,10 +40,13 @@ namespace SistemaEmpleadosMVC.UserControlForm
             
         }
 
-        private void muestraInfo()
+        public void muestraInfo()
         {
+            
             db.infoEmpleados();
             data.DataSource = db.ds.Tables["Empleado"];
+            data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
 
         private void Enter_Click(object sender, KeyPressEventArgs e)

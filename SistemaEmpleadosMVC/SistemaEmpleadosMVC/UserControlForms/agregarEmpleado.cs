@@ -16,11 +16,14 @@ namespace SistemaEmpleadosMVC
         public agregarEmpleado()
         {
             InitializeComponent();
+            muestraInfoPuesto();
+        }
+        public void muestraInfoPuesto()
+        {
             respPuesto.DataSource = db.ObtenerPuesto();
             respPuesto.DisplayMember = "Nombre_Puesto";
             respPuesto.ValueMember = "IdPuesto";
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
              bool flag = db.agregarEmpleado(Convert.ToInt32(respCedula.Text), respNombre.Text,respApellido.Text,respCorreo.Text,Convert.ToInt32(respTelefono.Text));

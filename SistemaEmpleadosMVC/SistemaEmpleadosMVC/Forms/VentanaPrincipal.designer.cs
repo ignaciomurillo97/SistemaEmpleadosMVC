@@ -34,6 +34,7 @@
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.back = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,13 +49,14 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.efecto = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.efecto1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.button7 = new System.Windows.Forms.Button();
+            this.historialVacaciones1 = new SistemaEmpleadosMVC.UserControlForms.HistorialVacaciones();
+            this.agregarEmpleado2 = new SistemaEmpleadosMVC.agregarEmpleado();
+            this.agregarPuesto1 = new SistemaEmpleadosMVC.UserControlForms.agregarPuesto();
+            this.realizarPago1 = new SistemaEmpleadosMVC.UserControlForms.realizarPago();
             this.editarEmpleado1 = new SistemaEmpleadosMVC.UserControlForms.editarEmpleado();
             this.buscar = new SistemaEmpleadosMVC.UserControlForm.Buscador();
-            this.historialVacaciones1 = new SistemaEmpleadosMVC.UserControlForms.HistorialVacaciones();
             this.datosEmpleados1 = new SistemaEmpleadosMVC.UserControlForms.DatosEmpleados();
-            this.agregarPuesto1 = new SistemaEmpleadosMVC.UserControlForms.agregarPuesto();
-            this.agregarEmpleado2 = new SistemaEmpleadosMVC.agregarEmpleado();
-            this.realizarPago1 = new SistemaEmpleadosMVC.UserControlForms.realizarPago();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -63,6 +65,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.back);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -74,6 +77,18 @@
             this.efecto1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // back
+            // 
+            this.efecto1.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
+            this.back.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.back, "back");
+            this.back.ForeColor = System.Drawing.Color.White;
+            this.back.Name = "back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // button5
             // 
@@ -149,6 +164,7 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelHeader.Controls.Add(this.button7);
             this.panelHeader.Controls.Add(this.button6);
             this.transicion.SetDecoration(this.panelHeader, BunifuAnimatorNS.DecorationType.None);
             this.efecto.SetDecoration(this.panelHeader, BunifuAnimatorNS.DecorationType.None);
@@ -224,7 +240,7 @@
             // 
             // efecto1
             // 
-            this.efecto1.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind;
+            this.efecto1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.efecto1.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -242,6 +258,51 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.efecto1.DefaultAnimation = animation1;
+            this.efecto1.Interval = 15;
+            // 
+            // button7
+            // 
+            this.efecto1.SetDecoration(this.button7, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.button7, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.button7, BunifuAnimatorNS.DecorationType.None);
+            this.button7.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // historialVacaciones1
+            // 
+            resources.ApplyResources(this.historialVacaciones1, "historialVacaciones1");
+            this.efecto1.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
+            this.historialVacaciones1.Name = "historialVacaciones1";
+            // 
+            // agregarEmpleado2
+            // 
+            resources.ApplyResources(this.agregarEmpleado2, "agregarEmpleado2");
+            this.efecto1.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
+            this.agregarEmpleado2.Name = "agregarEmpleado2";
+            // 
+            // agregarPuesto1
+            // 
+            this.efecto1.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.agregarPuesto1, "agregarPuesto1");
+            this.agregarPuesto1.Name = "agregarPuesto1";
+            // 
+            // realizarPago1
+            // 
+            this.efecto1.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.efecto.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            this.transicion.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.realizarPago1, "realizarPago1");
+            this.realizarPago1.Name = "realizarPago1";
             // 
             // editarEmpleado1
             // 
@@ -259,14 +320,6 @@
             resources.ApplyResources(this.buscar, "buscar");
             this.buscar.Name = "buscar";
             // 
-            // historialVacaciones1
-            // 
-            this.efecto1.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.historialVacaciones1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.historialVacaciones1, "historialVacaciones1");
-            this.historialVacaciones1.Name = "historialVacaciones1";
-            // 
             // datosEmpleados1
             // 
             this.efecto1.SetDecoration(this.datosEmpleados1, BunifuAnimatorNS.DecorationType.None);
@@ -276,30 +329,6 @@
             this.datosEmpleados1.Name = "datosEmpleados1";
             this.datosEmpleados1.Tag = "";
             // 
-            // agregarPuesto1
-            // 
-            this.efecto1.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.agregarPuesto1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.agregarPuesto1, "agregarPuesto1");
-            this.agregarPuesto1.Name = "agregarPuesto1";
-            // 
-            // agregarEmpleado2
-            // 
-            resources.ApplyResources(this.agregarEmpleado2, "agregarEmpleado2");
-            this.efecto1.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.agregarEmpleado2, BunifuAnimatorNS.DecorationType.None);
-            this.agregarEmpleado2.Name = "agregarEmpleado2";
-            // 
-            // realizarPago1
-            // 
-            this.efecto1.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            this.efecto.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            this.transicion.SetDecoration(this.realizarPago1, BunifuAnimatorNS.DecorationType.None);
-            resources.ApplyResources(this.realizarPago1, "realizarPago1");
-            this.realizarPago1.Name = "realizarPago1";
-            // 
             // VentanaPrincipal
             // 
             resources.ApplyResources(this, "$this");
@@ -307,13 +336,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buscar);
             this.Controls.Add(this.historialVacaciones1);
-            this.Controls.Add(this.datosEmpleados1);
-            this.Controls.Add(this.agregarPuesto1);
             this.Controls.Add(this.agregarEmpleado2);
+            this.Controls.Add(this.agregarPuesto1);
             this.Controls.Add(this.realizarPago1);
             this.Controls.Add(this.editarEmpleado1);
+            this.Controls.Add(this.buscar);
+            this.Controls.Add(this.datosEmpleados1);
             this.efecto.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.transicion.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.efecto1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -352,5 +381,7 @@
         private System.Windows.Forms.Button button5;
         private UserControlForms.agregarPuesto agregarPuesto1;
         private UserControlForms.HistorialVacaciones historialVacaciones1;
+        private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button7;
     }
 }

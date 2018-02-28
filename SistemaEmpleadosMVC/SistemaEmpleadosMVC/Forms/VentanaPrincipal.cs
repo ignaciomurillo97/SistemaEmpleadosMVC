@@ -18,31 +18,42 @@ namespace SistemaEmpleadosMVC
         public VentanaPrincipal()
         {
             InitializeComponent();
-            agregarEmpleado2.Hide();
+            setBack(button1);
+            agregarEmpleado2.muestraInfoPuesto();
+            MostrarVista(agregarEmpleado2);
             editarEmpleado1.Hide();
             datosEmpleados1.Hide();
             buscar.Hide();
             realizarPago1.Hide();
             agregarPuesto1.Hide();
             historialVacaciones1.Hide();
+            back.Hide();
+            
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             setBack(button1);
+            agregarEmpleado2.muestraInfoPuesto();
             MostrarVista(agregarEmpleado2);
         }
     
         private void button3_Click(object sender, EventArgs e)
         {
             setBack(button3);
+            buscar.muestraInfo();
             MostrarVista(buscar);
+            
         }
 
         private void editar_Click(object sender, EventArgs e)
         {
             setBack(button2);
+            editarEmpleado1.muestraInfoPuesto();
+            editarEmpleado1.muestraInfo();
+
             MostrarVista(editarEmpleado1);
+           
         }
 
         private void labelTitle_Click(object sender, EventArgs e)
@@ -65,8 +76,11 @@ namespace SistemaEmpleadosMVC
 
         public void MostrarEmpleado (int cedula)
         {
+
             datosEmpleados1.LlenarCampos(cedula);
+
             MostrarVista(datosEmpleados1);
+            Back();
         }
 
         public void MostrarHistorialVacaciones(int cedula)
@@ -77,9 +91,12 @@ namespace SistemaEmpleadosMVC
 
         public void MostrarVista (UserControl nuevaVista)
         {
-            vistaActiva?.Hide();
+            vistaActiva?.Hide();           
             transicion.ShowSync(nuevaVista);
+           
             vistaActiva = nuevaVista;
+            Back();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -88,7 +105,7 @@ namespace SistemaEmpleadosMVC
             MostrarVista(realizarPago1);
 
         }
-
+        //Color de pestañas
         private void button5_Click(object sender, EventArgs e)
         {
             setBack(button5);
@@ -104,6 +121,43 @@ namespace SistemaEmpleadosMVC
             botonActivo = pboton;
 
         }
+        //Boton de atras
+        private void Back()
+        {
+            if (vistaActiva == historialVacaciones1 || vistaActiva == datosEmpleados1)
+            {
+                back.Show();
+            }
+            else
+            {
+                back.Hide();
+            }
+        }
 
+        private void back_Click(object sender, EventArgs e)
+        {
+            if (vistaActiva == datosEmpleados1)
+            {
+                MostrarVista2(buscar);
+            }
+            else
+            {
+                MostrarVista2(datosEmpleados1);
+            }
+        }
+        public void MostrarVista2(UserControl nuevaVista)
+        {
+            vistaActiva?.Hide();
+            efecto1.ShowSync(nuevaVista);
+
+            vistaActiva = nuevaVista;
+            Back();
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

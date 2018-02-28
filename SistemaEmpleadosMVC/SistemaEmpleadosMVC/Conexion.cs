@@ -12,7 +12,7 @@ namespace SistemaEmpleadosMVC
 {
     class Conexion
     {
-        SqlConnection connection = new SqlConnection("Data Source=DESKTOP-5NI87TD;Initial Catalog=Empleados Diseño;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=LAPTOP-FO7R70NF;Initial Catalog=Empleados Diseño;Integrated Security=True");
         private SqlCommandBuilder cmb;
         public DataSet ds = new DataSet();
         public SqlDataAdapter da;
@@ -90,12 +90,15 @@ namespace SistemaEmpleadosMVC
 
         public void ObtenerDatosFamiliares(int cedula)
         {
-            string sql = "select infoFam.* " +
-                         "from[Información de Familiares] infoFam " +
-                         "inner join [Relaciones Familiares] relFam on " +
-                         "infoFam.Identificacion = relFam.IdFamiliar where " +
-                         "relFam.IdEmpleado = " + cedula.ToString();
-            string tabla = "[Información de Familiares]";
+           /* */
+            string sql = "SELECT * " +
+                "        FROM (SELECT IFD.Identificacion, IFD.Nombre, IFD.Apellidos, " +
+                        "IFD.Telefono, RF.[Parentesco con Empleado] " +
+                        "FROM[Información de Familiares] IFD " +
+                        "INNER JOIN[Relaciones Familiares] RF on IFD.Identificacion = RF.IdFamiliar " +
+                        "INNER JOIN Empleado E on E.Identificación = RF.IdEmpleado " +
+                        "WHERE E.Identificación =" + cedula.ToString()+") AS A";
+            string tabla = "A";
             ds.Tables.Clear();
             da = new SqlDataAdapter(sql, connection);
             cmb = new SqlCommandBuilder(da);
@@ -196,6 +199,13 @@ namespace SistemaEmpleadosMVC
             return Ejecutar(sql);        
         }
 
+        public bool agregarPermiso(int IdEmpleado, DateTime FechaInicio, DateTime FechaFinal, string Motivo)
+        {
+            string sql = "insert into [Permisos para Ausentarse] (IdEmpleado, [Fecha Inicial], [Fecha Final], Motivo)" +
+                         "values(" + IdEmpleado + ",'" + FechaInicio + "','" + FechaFinal + "', '" + Motivo + "')";
+            return Ejecutar(sql);
+        }
+
         public bool editarEmpleado(int respCedula, string respNombre, string respApellido, int respTelefono, string respCorreo, int respPuesto)
         {
             string sql = "update Empleado set Identificación= " + respCedula + ", Nombre='" + respNombre + "', Apellidos='" +
@@ -250,11 +260,11 @@ namespace SistemaEmpleadosMVC
 
 
                 int x = int.Parse(read["Cantidad Empleados"].ToString());
-                decimal y = decimal.Parse(read["Salario Pagado"].ToString());
+                //decimal y = decimal.Parse(read["Salario Pagado"].ToString());
 
 
                 DatosPagos.Cantidad_de_Empleados = x;
-                DatosPagos.Salario_Pagado = y;
+              // DatosPagos.Salario_Pagado = y;
 
 
             }

@@ -32,10 +32,20 @@ namespace SistemaEmpleadosMVC.UserControlForms
         {
             if (cedula == null) return;
             DateTime fechaInicio = FechaInicio.Value.Date;
-            DateTime fechaFinal = FechaFinal.Value.Date;
+            DateTime fechaFinal = FechaInicio.Value.Date;
             db.AgregarVacaciones((int) cedula, fechaInicio, fechaFinal);
             db.ObtenerHistorialVacaciones((int)cedula);
             TablaVacaciones.DataSource = db.ds.Tables["[Historial de Vacaciones]"];
+        }
+
+        private void TablaVacaciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

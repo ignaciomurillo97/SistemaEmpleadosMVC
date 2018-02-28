@@ -48,13 +48,23 @@ namespace SistemaEmpleadosMVC.UserControlForms
             }
 
             db.ObtenerDatosFamiliares(cedula);
-            DatosFamiliares.DataSource = db.ds.Tables["[Información de Familiares]"];
+            DatosFamiliares.DataSource = db.ds.Tables["A"];
         }
 
         private void botonHistorialVacaciones_Click(object sender, EventArgs e)
         {
             VentanaPrincipal padre = (this.Parent as VentanaPrincipal);
             padre.MostrarHistorialVacaciones(cedula);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

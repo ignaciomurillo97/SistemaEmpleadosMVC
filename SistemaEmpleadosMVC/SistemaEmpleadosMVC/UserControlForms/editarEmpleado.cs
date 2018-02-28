@@ -17,11 +17,14 @@ namespace SistemaEmpleadosMVC.UserControlForms
         {
             InitializeComponent();
             muestraInfo();
+            muestraInfoPuesto();
+        }
+        public void muestraInfoPuesto()
+        {
             respPuesto.DataSource = db.ObtenerPuesto();
             respPuesto.DisplayMember = "Nombre_Puesto";
             respPuesto.ValueMember = "IdPuesto";
         }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -71,10 +74,13 @@ namespace SistemaEmpleadosMVC.UserControlForms
                 MessageBox.Show("Algo salio mal!");
             }
         }
-        private void muestraInfo()
+        public void muestraInfo()
         {
+            data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            data.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             db.infoEmpleados();
             data.DataSource = db.ds.Tables["Empleado"];
+           
         }
         private void data_CellClick(object sender, DataGridViewCellEventArgs e)
         {
